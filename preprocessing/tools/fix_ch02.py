@@ -46,11 +46,12 @@ tail2 = D[283][i2:]
 D[283] = D[283][:i2]
 D[284] = tail2
 
-# 验证
-sys.path.insert(0, 'auto-epublizer/src')
+# 验证（路径相对本脚本推导，便于公开复用）
+sys.path.insert(0, os.path.abspath(os.path.join(
+    os.path.dirname(__file__), '..', '..', '..', '..', 'auto-epublizer', 'src')))
 from auto_translator.glossary.csv_io import Glossary, load_glossary_csv
 from auto_translator.review.g0 import terminology_hits, count_footnote_refs
-WS = 'workspaces/matla-al-sadayn-1'
+WS = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 gl = Glossary(load_glossary_csv(os.path.join(WS, 'analysis', 'glossary.csv')))
 rows = [json.loads(l) for l in open(os.path.join(WS, 'translation/align/ch02.jsonl'), encoding='utf-8')]
 bad = 0

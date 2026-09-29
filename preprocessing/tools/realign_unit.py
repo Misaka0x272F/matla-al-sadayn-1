@@ -18,7 +18,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, "auto-epublizer/src")
+# CLI 源路径相对本脚本推导（tools → preprocessing → 工作区 → workspaces → 根）
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "auto-epublizer" / "src"))
 
 from make_align import content_blocks  # noqa: E402
 from auto_translator.glossary.csv_io import Glossary, load_glossary_csv  # noqa: E402
