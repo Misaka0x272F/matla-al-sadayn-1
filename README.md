@@ -75,4 +75,4 @@
 
 - `publication.json.meta.source_sha256` 绑定源件身份；`events.jsonl` 为行为账本。
 - 整备留痕：`preprocessing/repairs.jsonl`；结构清单：`preprocessing/structure.csv`。
-- 权属：底本公有领域；1974 校勘本编辑层版权归编者/出版方，本译本仅作内部学习研究副本，不公开分发。
+- 权属：仅原著正文（作者卒于 1482 年）属公有领域；1974/1993–96 校勘本的**编辑层、版式、2013 年数字再版层、封面图及 back-about 第三方引文均未进入公有领域**，本译本仅作内部学习研究副本，不公开分发。逐项审查见 `reviews/版权审查-20260929.md`。
