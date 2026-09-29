@@ -1,0 +1,12 @@
+item,kind,status,locator,unit_id,note
+封面图（p1–2）,figure,included,structured/raw/media/p001-img01.jpeg,cover,EPUB 封面
+数字馆 logo（p3）,figure,excluded,structured/raw/media/p003-img01.png,,数字图书馆标识，非原著内容，有意不进 EPUB
+书名页（p4）,section,included,p4,front-titlepage,
+原始目录（p5–14）,toc,excluded,p5-14,,EPUB 目录由单元标题自动生成，故不收录原文目录页
+著录页（p15）,section,included,p15,front-copyright,
+编者前言与作者生平（p16–32）,section,included,p16-32,front-preface,
+作者序文（p33–40）,section,included,p33-40,front-dibache,
+编年正文（p41–261）,section,included,p41-261,ch01,按年代聚为 ch01–ch10 共 10 单元
+异文汇编（p262–263）,section,included,p262-263,back-appendix,
+数字出版方说明（p264–266）,section,included,p264-266,back-about,
+封底图（p267）,figure,included,structured/raw/media/p267-img01.png,back-about,EPUB 末页

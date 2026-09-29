@@ -1,0 +1,21 @@
+{
+  "page_idx": 3,
+  "blocks": [
+    {
+      "type": "image",
+      "bbox": [
+        164.79544067382812,
+        297.06378173828125,
+        429.108642578125,
+        527.9779663085938
+      ],
+      "text": "![p003-img01](raw/media/p003-img01.png)",
+      "file": "media/p003-img01.png",
+      "xref": 21,
+      "method": "embedded",
+      "insert_id": "p003-img01"
+    }
+  ],
+  "rtl": true,
+  "source": "source/matla-al-sadayn-1.pdf"
+}

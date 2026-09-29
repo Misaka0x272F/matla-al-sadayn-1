@@ -1,0 +1,20 @@
+{
+  "id": "p001-img01",
+  "type": "image",
+  "source": {
+    "page": 1,
+    "bbox": [
+      38.109378814697266,
+      78.242431640625,
+      556.3705444335938,
+      769.2573852539062
+    ],
+    "xref": 6,
+    "method": "embedded"
+  },
+  "file": "media/p001-img01.jpeg",
+  "markdown": null,
+  "content_desc": "波斯文原书封面（含书名 مطلع سعدین و مجمع بحرین 与出版信息），作为 EPUB 封面。",
+  "latex": null,
+  "extra": {}
+}

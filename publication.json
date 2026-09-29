@@ -1,0 +1,219 @@
+{
+  "schema_version": "0.1.0",
+  "slug": "matla-al-sadayn-1",
+  "meta": {
+    "title": "《双星升起与两海汇合之时》第一卷",
+    "title_translated": null,
+    "creator": "کمال الدین عبد الرزاق سمرقندی（Kamāl al-Dīn ʿAbd al-Razzāq Samarqandī）",
+    "translator": "CodeBuddy",
+    "contributors": [],
+    "language": "",
+    "target_language": "zh-CN",
+    "genre": null,
+    "publisher": "پژوهشگاه علوم انسانی و مطالعات فرهنگی（德黑兰）／数字版：مرکز تحقیقات رایانه‌ای قائمیه اصفهان",
+    "date": "1974",
+    "identifier": {
+      "isbn": null,
+      "doi": null,
+      "uri": null
+    },
+    "source": "source/matla-al-sadayn-1.pdf",
+    "source_sha256": "86a45a75fc832e41e3da18074ab6100f9fcac0acaf5388fb683d3a19d9907f92",
+    "rights": "底本公有领域（作者卒于 1482 年）；1974 年校勘本编辑层版权归编者与出版方；本译本仅作内部学习研究副本，不公开分发。",
+    "description": null,
+    "subjects": []
+  },
+  "config": {
+    "bilingual": false,
+    "target_language": "zh-CN"
+  },
+  "units": [
+    {
+      "id": "cover",
+      "kind": "cover",
+      "title": "مطلع سعدین و مجمع بحرین",
+      "status": "built",
+      "meta": {
+        "rel_path": "cover.md",
+        "region": "cover",
+        "level": 1
+      }
+    },
+    {
+      "id": "front-titlepage",
+      "kind": "titlepage",
+      "title": "صفحه عنوان",
+      "status": "built",
+      "meta": {
+        "rel_path": "frontmatter/front-titlepage.md",
+        "region": "frontmatter",
+        "level": 1
+      }
+    },
+    {
+      "id": "front-copyright",
+      "kind": "copyright",
+      "title": "مشخصات کتاب",
+      "status": "built",
+      "meta": {
+        "rel_path": "frontmatter/front-copyright.md",
+        "region": "frontmatter",
+        "level": 1
+      }
+    },
+    {
+      "id": "front-preface",
+      "kind": "preface",
+      "title": "مقدمه و شرح حال مؤلف",
+      "status": "built",
+      "meta": {
+        "rel_path": "frontmatter/front-preface.md",
+        "region": "frontmatter",
+        "level": 1
+      }
+    },
+    {
+      "id": "front-dibache",
+      "kind": "preface",
+      "title": "دیباچه",
+      "status": "built",
+      "meta": {
+        "rel_path": "frontmatter/front-dibache.md",
+        "region": "frontmatter",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch01",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 717–727 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch01.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch02",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 728–736 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch02.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch03",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 737–744 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch03.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch04",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 745–753 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch04.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch05",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 754–757 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch05.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch06",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 758–763 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch06.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch07",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 764–766 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch07.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch08",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 767–768 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch08.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch09",
+      "kind": "chapter",
+      "title": "وقایع سال‌های 769–770 هجری",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch09.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "ch10",
+      "kind": "chapter",
+      "title": "وقایع سال 771 هجری و جلوس امیر تیمور",
+      "status": "built",
+      "meta": {
+        "rel_path": "body/ch10.md",
+        "region": "body",
+        "level": 1
+      }
+    },
+    {
+      "id": "back-appendix",
+      "kind": "appendix",
+      "title": "حواشی نسخ",
+      "status": "built",
+      "meta": {
+        "rel_path": "backmatter/back-appendix.md",
+        "region": "backmatter",
+        "level": 1
+      }
+    },
+    {
+      "id": "back-about",
+      "kind": "afterword",
+      "title": "درباره مرکز تحقیقات رایانه‌ای قائمیه اصفهان",
+      "status": "built",
+      "meta": {
+        "rel_path": "backmatter/back-about.md",
+        "region": "backmatter",
+        "level": 1
+      }
+    }
+  ]
+}

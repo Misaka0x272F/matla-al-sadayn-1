@@ -1,0 +1,61 @@
+{"event": "run_initialized", "input_path": "sources/matla-al-sadayn-1.pdf", "source_sha256": "86a45a75fc832e41e3da18074ab6100f9fcac0acaf5388fb683d3a19d9907f92", "target_lang": "zh-CN", "title": "matla-al-sadayn-1", "ts": "2026-09-29T10:30:48+08:00"}
+{"event": "structure_written", "ts": "2026-09-29T10:33:29+08:00", "units": 4}
+{"event": "preprocess_facts_written", "kind": "pdf", "ts": "2026-09-29T10:33:36+08:00", "units": 4}
+{"event": "preprocess_facts_written", "kind": "pdf", "ts": "2026-09-29T10:37:52+08:00", "units": 4}
+{"added": ["cover", "front-titlepage", "front-copyright", "front-preface", "front-dibache", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "back-appendix", "back-about"], "event": "restructured", "removed": [], "reset": ["ch01", "ch02", "ch03", "ch04"], "ts": "2026-09-29T10:42:06+08:00", "units": 17}
+{"added": [], "event": "restructured", "removed": [], "reset": [], "ts": "2026-09-29T10:42:59+08:00", "units": 17}
+{"event": "meta_update", "fields": ["title", "creator", "translator", "publisher", "date", "rights"], "ts": "2026-09-29T10:47:29+08:00"}
+{"event": "import_translated", "ts": "2026-09-29T11:57:01+08:00", "units": ["front-titlepage"]}
+{"event": "import_translated", "ts": "2026-09-29T11:57:04+08:00", "units": ["front-copyright"]}
+{"event": "import_translated", "ts": "2026-09-29T11:59:35+08:00", "units": ["back-about"]}
+{"event": "import_translated", "ts": "2026-09-29T12:03:00+08:00", "units": ["back-about"]}
+{"event": "import_translated", "ts": "2026-09-29T12:11:41+08:00", "units": ["front-dibache"]}
+{"event": "import_translated", "ts": "2026-09-29T12:12:17+08:00", "units": ["front-dibache"]}
+{"event": "import_translated", "ts": "2026-09-29T12:13:52+08:00", "units": ["back-appendix"]}
+{"event": "import_translated", "ts": "2026-09-29T12:18:28+08:00", "units": ["front-preface"]}
+{"event": "import_translated", "ts": "2026-09-29T12:19:46+08:00", "units": ["front-preface"]}
+{"event": "import_translated", "ts": "2026-09-29T12:20:13+08:00", "units": ["front-preface"]}
+{"event": "import_translated", "ts": "2026-09-29T12:22:17+08:00", "units": ["ch10"]}
+{"event": "import_translated", "ts": "2026-09-29T12:22:44+08:00", "units": ["ch10"]}
+{"event": "import_translated", "ts": "2026-09-29T12:24:41+08:00", "units": ["ch09"]}
+{"event": "import_translated", "ts": "2026-09-29T12:25:19+08:00", "units": ["ch09"]}
+{"event": "import_translated", "ts": "2026-09-29T12:26:42+08:00", "units": ["ch08"]}
+{"event": "import_translated", "ts": "2026-09-29T12:27:10+08:00", "units": ["ch08"]}
+{"event": "import_translated", "ts": "2026-09-29T12:30:15+08:00", "units": ["ch07"]}
+{"event": "import_translated", "ts": "2026-09-29T12:30:40+08:00", "units": ["ch07"]}
+{"event": "import_translated", "ts": "2026-09-29T12:31:38+08:00", "units": ["ch07"]}
+{"event": "import_translated", "ts": "2026-09-29T12:35:33+08:00", "units": ["ch06"]}
+{"event": "import_translated", "ts": "2026-09-29T12:36:03+08:00", "units": ["ch06"]}
+{"event": "import_translated", "ts": "2026-09-29T12:40:36+08:00", "units": ["ch05"]}
+{"event": "import_translated", "ts": "2026-09-29T12:41:19+08:00", "units": ["ch05"]}
+{"event": "import_translated", "ts": "2026-09-29T12:58:57+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T13:00:01+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T13:04:19+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T13:35:23+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T13:41:46+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T13:54:50+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T14:28:21+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T14:30:20+08:00", "units": ["ch04"]}
+{"event": "import_translated", "ts": "2026-09-29T15:36:22+08:00", "units": ["ch01"]}
+{"event": "import_translated", "ts": "2026-09-29T15:44:10+08:00", "units": ["ch01"]}
+{"event": "import_translated", "ts": "2026-09-29T16:06:38+08:00", "units": ["ch01"]}
+{"event": "import_translated", "ts": "2026-09-29T17:11:55+08:00", "units": ["ch02"]}
+{"event": "import_translated", "ts": "2026-09-29T17:35:30+08:00", "units": ["ch02"]}
+{"event": "import_translated", "ts": "2026-09-29T17:40:17+08:00", "units": ["ch03"]}
+{"event": "import_translated", "ts": "2026-09-29T17:41:25+08:00", "units": ["ch03"]}
+{"event": "import_translated", "ts": "2026-09-29T17:42:02+08:00", "units": ["ch03"]}
+{"event": "import_translated", "ts": "2026-09-29T17:42:35+08:00", "units": ["ch03"]}
+{"event": "import_translated", "ts": "2026-09-29T17:43:54+08:00", "units": ["front-titlepage", "front-copyright", "front-preface", "front-dibache", "ch01", "ch02", "ch03", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "back-appendix", "back-about"]}
+{"event": "import_reviewed", "ts": "2026-09-29T17:43:54+08:00", "units": ["front-titlepage", "front-copyright", "front-preface", "front-dibache", "ch01", "ch02", "ch03", "ch04", "ch05", "ch06", "ch07", "ch08", "ch09", "ch10", "back-appendix", "back-about"]}
+{"event": "built", "fallback_units": ["cover"], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T17:44:08+08:00"}
+{"event": "import_translated", "ts": "2026-09-29T17:44:40+08:00", "units": ["cover"]}
+{"event": "import_translated", "ts": "2026-09-29T17:44:42+08:00", "units": ["cover"]}
+{"event": "import_reviewed", "ts": "2026-09-29T17:44:42+08:00", "units": ["cover"]}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T17:44:44+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T17:46:55+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T17:47:56+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T18:35:49+08:00"}
+{"event": "meta_update", "fields": ["date"], "ts": "2026-09-29T18:53:54+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T18:54:30+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T18:55:28+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T19:10:15+08:00"}

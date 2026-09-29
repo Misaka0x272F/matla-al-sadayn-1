@@ -1,0 +1,27 @@
+{
+  "page_idx": 1,
+  "blocks": [
+    {
+      "type": "text",
+      "bbox": null,
+      "text": "Leiol\nwww.\n.com\nwww\nn.org\nwww\n.net\nGhaemiyeh\nwww.\n.ir",
+      "ocr": true
+    },
+    {
+      "type": "image",
+      "bbox": [
+        38.109378814697266,
+        78.242431640625,
+        556.3705444335938,
+        769.2573852539062
+      ],
+      "text": "![p001-img01](raw/media/p001-img01.jpeg)",
+      "file": "media/p001-img01.jpeg",
+      "xref": 6,
+      "method": "embedded",
+      "insert_id": "p001-img01"
+    }
+  ],
+  "rtl": true,
+  "source": "source/matla-al-sadayn-1.pdf"
+}

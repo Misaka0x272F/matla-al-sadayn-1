@@ -1,0 +1,95 @@
+{
+  "reviewer": "auto-epublizer agent (self-review)",
+  "timestamp": "20260929-174343",
+  "scope": "全书 16 个正文单元（cover 仅书名+图片，不入译文）",
+  "method": "逐单元 make_align + g0 静态校验；术语命中/标记/脚注守恒/fidelity 硬缺陷清零；长度比告警（advisory）人工抽查确认非漏译",
+  "units": [
+    {
+      "id": "front-titlepage",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "front-copyright",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "front-preface",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "front-dibache",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch01",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch02",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch03",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch04",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch05",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch06",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch07",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch08",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch09",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "ch10",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "back-appendix",
+      "g0_hard": 0,
+      "status": "pass"
+    },
+    {
+      "id": "back-about",
+      "g0_hard": 0,
+      "status": "pass"
+    }
+  ],
+  "notes": [
+    "ch01–ch03 为忠实意译：事件、世系、年表、脚注（校勘异文与出处）完整保留；诗句为押韵或直译+括注。",
+    "ch04 因早期手写分块与页断残片错位，已用 DP（术语命中+数字+块类型）重建 1:1 对齐；37 处页断残片并入相邻源块。",
+    "ch02/ch03 各自 13/11 条术语命中已逐条修复（详见 tools/fix_ch02.py、fix_ch03.py）。",
+    "advisory 的长度比告警集中于脚注残句与诗句块，属原文断片特性，非漏译。"
+  ],
+  "conclusion": "pass"
+}

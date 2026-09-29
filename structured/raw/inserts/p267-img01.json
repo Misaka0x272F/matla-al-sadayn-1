@@ -1,0 +1,20 @@
+{
+  "id": "p267-img01",
+  "type": "image",
+  "source": {
+    "page": 267,
+    "bbox": [
+      38.109378814697266,
+      78.242431640625,
+      556.37060546875,
+      769.2573852539062
+    ],
+    "xref": 2308,
+    "method": "embedded"
+  },
+  "file": "media/p267-img01.png",
+  "markdown": null,
+  "content_desc": "波斯文原书封底图像，收作 EPUB 末页。",
+  "latex": null,
+  "extra": {}
+}

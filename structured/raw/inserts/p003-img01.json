@@ -1,0 +1,20 @@
+{
+  "id": "p003-img01",
+  "type": "image",
+  "source": {
+    "page": 3,
+    "bbox": [
+      164.79544067382812,
+      297.06378173828125,
+      429.108642578125,
+      527.9779663085938
+    ],
+    "xref": 21,
+    "method": "embedded"
+  },
+  "file": "media/p003-img01.png",
+  "markdown": null,
+  "content_desc": "数字图书馆（قائمیه）标识 logo，非原著内容，未入册。",
+  "latex": null,
+  "extra": {}
+}
