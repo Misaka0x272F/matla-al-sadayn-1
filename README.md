@@ -58,6 +58,14 @@
   本工作区**保留原位、随文翻译**（用户决定全量译），不拆分。
 - **译注约定**：高难度段落译文后加【译注】（说明 + 波斯语原文），同步写入 `align.tgt`。
 
+## 交付后精修：被分页/注释打断段落的合并（2026-09-29）
+
+- 证据：`preprocessing/tools/trace_breaks.py` → `breaks.jsonl`（12005 条被删版式标记）、`fragments.csv`（候选边界）。
+- 逐条语义裁定（`merge_plan.jsonl` + `merge_plan_round2.jsonl`），共**合并 19 处**真断句（源译成对并块，只并块不改字）；正文块 2551 → **2532**。
+- 校验：文本守恒通过；`g0` 硬缺陷 0（advisory 404→397）；`qa released=true`、epubcheck 0 error/0 warning、`align_md_drift=0`、`epub_coverage=1.0`。
+- 记录：`reviews/交付后精修-20260929.md`；`preprocessing/repairs.jsonl` 追加 9 条 `line_join`。
+- 遗留：源块「混装多类内容」的配对粒度问题（非交付缺陷）、跨单元残片 9 处、ch10 页眉残留——见精修记录 §5。
+
 ## 待办 / 下一步
 
 - 翻译：按 `preprocessing/todo.md` §1 逐单元进行（17 单元，估 ≈220 批）。

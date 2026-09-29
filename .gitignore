@@ -4,3 +4,6 @@
 __pycache__/
 .pytest_cache/
 .ruff_cache/
+
+# 精修备份（本地回滚用，不入库）
+preprocessing/backups/
