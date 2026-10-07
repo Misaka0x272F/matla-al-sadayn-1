@@ -63,3 +63,4 @@
 {"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T20:40:41+08:00"}
 {"event": "meta_update", "fields": ["translator", "rights"], "ts": "2026-09-29T21:13:17+08:00"}
 {"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-09-29T21:13:36+08:00"}
+{"event": "built", "fallback_units": [], "output": "workspaces/matla-al-sadayn-1/output/matla-al-sadayn-1.epub", "slug": "matla-al-sadayn-1", "ts": "2026-10-07T09:54:40+08:00"}

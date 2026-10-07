@@ -19,6 +19,7 @@
     },
     "source": "source/matla-al-sadayn-1.pdf",
     "source_sha256": "86a45a75fc832e41e3da18074ab6100f9fcac0acaf5388fb683d3a19d9907f92",
+    "source_original": null,
     "rights": "原著正文属公有领域（作者卒于 1482 年）。本译本新增内容（中文译文、译注、句级对照、结构编排、文档与脚本）以 CC BY-SA 4.0 公开，署名 Misaka0x272F；源 PDF、1974/1993–96 校勘本编辑层与版式、2013 年数字再版层、封面图及第三方现代作品引文不在该许可范围内，权利归各自权利人（详见 reviews/版权审查-20260929.md）。",
     "description": null,
     "subjects": []
