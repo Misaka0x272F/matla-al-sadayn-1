@@ -16,6 +16,7 @@
 用法::
 
     python preprocessing/tools/normalize_structured.py [--dry-run]
+    python preprocessing/tools/normalize_structured.py --out /tmp/sb   # 沙箱验证 diff
 """
 
 from __future__ import annotations
@@ -128,6 +129,42 @@ def _classify(line: str) -> str | None:
     return "body"
 
 
+# ── 年份标题与条目标题粘连的修复（2026-10-08）────────────────────────────
+# 数字版把「年份标题 + 条目标题」压成**一行**，例如（≈66 字符）：
+#     وقایع سنه ثمان و خمسین و سبعمائه ذکر عزیمت پادشاه جانی بیک به آذربایجان
+#     └──── 回历 758 年之事 ────┘└──── 条目标题 ────┘
+# ``_classify`` 的 ≤55 字符上限会把整行判为 ``body``，于是年份标题留在段落
+# 中间。短年份标题（≈32 字符）不受影响，故表现为**约一半命中、一半漏切**：
+# 本书 46 个年份标题中漏切 24 个，并连锁导致 ch06–ch10 一个 ``##`` 都没有，
+# 译者不得不把首条 h3 提到 h2 补层级（G0 判「标题层级数量不守恒」10 条）。
+#
+# 修法：判级**之前**先按条目标题关键词把年份前缀切出来单独成 ``##``，
+# 余下条目标题单独成 ``###``——切分后即使用例的 55 字上限也失效，
+# 故此处不走 ``_classify``。
+#
+# ⚠ **只能在行首命中**：正文叙述里也有 ``…در وقایع سنه …``（「在某某年…」），
+# 那是散文不是标题，误切会把句子劈成标题。已核：全书行中命中 5 处，均为散文。
+_YEAR_PREFIX = "وقایع سنه"
+
+
+def _split_year_heading(line: str) -> tuple[str, str] | None:
+    """行首年份标题与条目标题粘连时切开；不适用返回 ``None``。"""
+    s = line.strip()
+    if not s.startswith(_YEAR_PREFIX) or len(s) <= 55:
+        return None
+    cut = -1
+    for kw in _H3_KW:
+        i = s.find(kw, len(_YEAR_PREFIX))
+        if i > 0 and (cut < 0 or i < cut):
+            cut = i
+    if cut < 0:
+        return None
+    year, entry = s[:cut].strip(), s[cut:].strip()
+    if not year or not entry:
+        return None
+    return year, entry
+
+
 _SENT_END = ".؟!:»…"
 _MAX_PARA_CHARS = 600
 
@@ -180,6 +217,13 @@ class Builder:
             if _is_print_header(raw_line):
                 self.stats["print_headers"] += 1
                 continue
+            split = _split_year_heading(raw_line)
+            if split:
+                year_part, entry_part = split
+                self._emit("## " + year_part)
+                self._emit("### " + entry_part)
+                self.stats["headings"] += 2
+                continue
             kind = _classify(raw_line)
             if kind in ("h2", "h3"):
                 self._emit(("#" * (2 if kind == "h2" else 3)) + " " + raw_line.strip())
@@ -223,7 +267,13 @@ def build_unit(unit: dict) -> tuple[str, dict]:
 def main() -> int:
     ap = argparse.ArgumentParser(description="重建本书 structured/")
     ap.add_argument("--dry-run", action="store_true", help="只统计，不写文件")
+    ap.add_argument("--out", type=Path, default=None,
+                    help="输出目录；缺省写回 structured/。仅用于沙箱验证 diff，"
+                         "给定时不写 repairs.jsonl / structure.csv")
     args = ap.parse_args()
+
+    struct = args.out if args.out is not None else STRUCT
+    sandbox = args.out is not None
 
     repairs = []
     totals = {"header_blocks": 0, "separators": 0, "print_headers": 0,
@@ -233,7 +283,7 @@ def main() -> int:
         for k, v in stats.items():
             totals[k] += v
         rel = "cover.md" if unit["region"] == "cover" else f"{unit['region']}/{unit['id']}.md"
-        dest = STRUCT / rel
+        dest = struct / rel
         if not args.dry_run:
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(md, encoding="utf-8")
@@ -252,7 +302,7 @@ def main() -> int:
               f"h={stats['headings']:>3d} notes={stats['notes']:>3d} img={stats['images']}")
 
     print("totals:", totals)
-    if not args.dry_run:
+    if not args.dry_run and not sandbox:
         rp = WS / "preprocessing" / "repairs.jsonl"
         with rp.open("w", encoding="utf-8") as f:
             for r in repairs:
